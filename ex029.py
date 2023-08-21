@@ -4,7 +4,7 @@
 velocidade = int(input('Qual a velocidade do carro (km/h)?\n'))
 valor_da_multa = (velocidade - 80) * 7
 if velocidade > 80:
-    print('Você foi multado por ultrapassar a velocidade da via.\nO valor da multa será de R$ {}.'.format(valor_da_multa))
+    print('Você foi multado por ultrapassar a velocidade de 80km/h da via.\nO valor da multa será de R$ {}.'.format(valor_da_multa))
 elif 0<=velocidade<40:
     print('Cuidado! Velocidade muito baixa na via.')
 elif velocidade < 0:
