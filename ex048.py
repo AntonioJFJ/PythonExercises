@@ -9,3 +9,7 @@ for n in range(1, 501, 2):
         soma = soma + n
 print('O somatório dos \033[33m{}\033[m valores ímpares e múltiplos de 3 no intervalo de 1 a 500 é: \033[4:33m{}'.format(cont, soma))
 
+
+#cont = cont + 1   =>   cont += 1
+#soma = soma + n   =>   soma += n
+
