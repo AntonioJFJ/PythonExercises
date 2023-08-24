@@ -19,7 +19,7 @@ elif 25 < imc <= 30:
 elif 30 < imc <= 40:
     print('Seu IMC é {:.2f}\n\033[31mVocê está com Obesidade\033[m.'.format(imc))
 elif imc > 40:
-    print('Seu IMC é {:.2f}\n\033[31:41mVocê está com Obesidade Mórbida\033[m.'.format(imc))
+    print('Seu IMC é {:.2f}\n\033[31:46mVocê está com Obesidade Mórbida\033[m.'.format(imc))
 elif imc < 0:
     print('\033[45mErro. Verifique o peso e a altura e tente novamente, pois seu IMC foi {:.2f}.\033[m'.format(imc))
 
