@@ -2,10 +2,9 @@
 # não atingiram a maioridade e quantas já são maiores.
 
 import datetime
+data_atual = datetime.date.today().year
 cont = 0
 Ncont = 0
-Econt = 0
-data_atual = datetime.date.today().year
 
 for c in range(1, 8):
     print('{}ª pessoa'.format(c))
@@ -13,10 +12,10 @@ for c in range(1, 8):
     idade = data_atual-ano
     print('-'*60)
     if 0 <= idade < 21:
-        cont += 1
-    elif idade >= 21:
         Ncont += 1
+    elif idade >= 21:
+        cont += 1
 
 print('\033[31m{} pessoas ainda NÃO atingiram a maioridade.\033[m\n'
-      '\033[32m{} pessoas JÁ atingiram a maioridade.\033[m'.format(cont, Ncont))
+      '\033[32m{} pessoas JÁ atingiram a maioridade.\033[m'.format(Ncont, cont))
 
