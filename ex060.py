@@ -3,13 +3,13 @@
 
 num = int(input('Digite um número para visualizar seu fatorial: '))
 c = num
-soma = 0
+f = 1
 while c > 0:
-    print(c)
+    print('{}'.format(c), end='')
+    print(' x ' if c > 1 else ' = ', end='')
+    f *= c
     c -= 1
-    mult = num*c
-    soma += mult
-print('{}! = {}'.format(num, mult))
+print('{}'.format(f))
 
 
 
