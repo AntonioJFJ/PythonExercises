@@ -6,6 +6,10 @@
 
 import time
 def contador(início, fim, passo):
+    if passo < 0:
+        passo *= -1
+    elif passo == 0:
+        passo = 1
     print('-='*40)
     print(f'Contagem de {início} até {fim} de {passo} em {passo}:')
     if início < fim:
