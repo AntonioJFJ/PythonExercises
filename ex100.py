@@ -6,18 +6,18 @@ import random
 números = []
 
 
-def sorteia(números):
+def sorteia(lista):
     print('-'*60)
-    while len(números) < 5:
+    while len(lista) < 5:
         pc = random.randint(1, 10)
-        if pc not in números:
-            números.append(pc)
-    print(f'Os valores sorteados foram: \033[33m{sorted(números)}\033[m')
+        if pc not in lista:
+            lista.append(pc)
+    print(f'Os valores sorteados foram: \033[33m{sorted(lista)}\033[m')
 
 
-def somaPar(números):
+def somaPar(pares):
     par = 0
-    for n in números:
+    for n in pares:
         if (n % 2) == 0:
             par += n
     print(f'A soma entre os valores pares é: \033[33m{par}\033[m')
